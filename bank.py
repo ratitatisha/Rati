@@ -1,15 +1,11 @@
-def main():
-    user_prompt = input("What is the answer to the great question of life,The Universe,and everything? ").strip().lower()
-    print(answer(user_prompt))
+greeting = str(input("What was your greeting? "))
+greeting = greeting.strip()
+greeting = greeting.lower()
 
-def answer(text):
-    match text:
-        case "42":
-           return "Yes"
-        case "forty two":
-            return "Yes"
-        case "forty-two":
-            return "Yes"
-        case _:
-            return "No"
-main()
+if greeting.startswith("hello"):
+   print("$0")
+elif greeting.startswith("h"):
+    print("$20")
+else:
+    print("$100")
+
