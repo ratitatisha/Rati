@@ -1,0 +1,1 @@
+print(input("please enter five word proposal: ").replace(" ","..."))
